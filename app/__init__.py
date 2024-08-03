@@ -18,6 +18,6 @@ def create_app():
 
     with app.app_context():
         from app import routes, models, forms
-        routes.configure_routes(app)  # Добавьте эту строку
+        routes.configure_routes(app)
 
     return app
